@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">desaign</div>
+      <div className="navbar-logo">aex events</div>
       <div className={`navbar-links-container${menuOpen ? ' open' : ''}`}>
         <ul className="navbar-links">
           <li><a href="#about" onClick={scrollToAbout}>About</a></li>
