@@ -1,0 +1,149 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  gap: 2rem;
+
+}
+
+.hero-content {
+  flex: 1 1 0;
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.hero-btn {
+  background: #38b6ff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  font-weight: 500;
+}
+
+.hero-btn--white {
+  background: #fff;
+  color: #111;
+  border: none;
+}
+
+.hero-btn--blue {
+  background: #38b6ff;
+  color: #fff;
+  border: none;
+}
+
+.hero-btn:hover, .hero-btn--blue:hover {
+  background: #111;
+  color: #38b6ff;
+}
+
+.hero-btn--white:hover {
+  background: #38b6ff;
+  color: #fff;
+}
+
+.hero-image {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+ 
+}
+
+.hero-timer {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 2rem 0 2.5rem 0;
+  justify-content: flex-start;
+}
+
+.timer-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(56,182,255,0.10);
+  padding: 0.7rem 1.2rem;
+  min-width: 70px;
+}
+
+.timer-value {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #38b6ff;
+  letter-spacing: 0.04em;
+}
+
+.timer-label {
+  font-size: 0.95rem;
+  color: #111;
+  margin-top: 0.2rem;
+  font-weight: 500;
+}
+
+.timer-separator {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #38b6ff;
+  margin: 0 0.2rem;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-image {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .hero-image img {
+    max-width: 90vw;
+  }
+  .hero-timer {
+    justify-content: center;
+    gap: 0.7rem;
+    margin: 1.2rem 0 2rem 0;
+  }
+  .timer-segment {
+    min-width: 55px;
+    padding: 0.5rem 0.7rem;
+  }
+  .timer-value {
+    font-size: 1.3rem;
+  }
+  .timer-label {
+    font-size: 0.8rem;
+  }
+  .timer-separator {
+    font-size: 1.3rem;
+  }
+} 

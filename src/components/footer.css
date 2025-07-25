@@ -1,0 +1,11 @@
+.footer {
+  background-color: #111; /* black background */
+  color: #fff; /* white text */
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+  border-top: 3px solid #38b6ff; /* skyblue accent */
+} 

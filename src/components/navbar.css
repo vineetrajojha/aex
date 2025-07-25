@@ -1,0 +1,121 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff; /* dark background */
+  padding: 1.5rem 2.5rem;
+  position: relative;
+}
+
+.navbar-logo {
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: #090909;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.navbar-links li a:hover {
+  color: #38b6ff;
+}
+
+.navbar-signin {
+  background: #38b6ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-left: 2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-signin:hover {
+  background: #38b6ff;
+  color: #fff;
+}
+
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  z-index: 1001;
+}
+
+.bar {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+  .navbar-links-container {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #181929;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 220px;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    gap: 1.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 1000;
+  }
+  .navbar-links-container.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-end;
+  }
+  .navbar-signin {
+    margin-left: 0;
+    width: 100%;
+    text-align: right;
+  }
+  .navbar-hamburger {
+    display: flex;
+  }
+} 
